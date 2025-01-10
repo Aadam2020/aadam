@@ -1,25 +1,68 @@
-<!-- TradingView Widget BEGIN -->
-<div class="tradingview-widget-container">
-  <div class="tradingview-widget-container__widget"></div>
-  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
-  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
-  {
-  "symbols": [
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradingView Ticker Tape Widget</title>
+     <style>
+        body {
+            background-color: #1a1a1a; /* Dark background */
+            color: #fff;
+            font-family: sans-serif; /* Generic font family for good readability */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* ensure that it will fill out the screen */
+        }
+        .tradingview-widget-container {
+            max-width: 1000px;
+        }
+    </style>
+</head>
+<body>
+  <div class="tradingview-widget-container">
+    <div class="tradingview-widget-container__widget"></div>
+    <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>
+    <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
     {
-      "description": "EURUSD",
-      "proName": "FOREXCOM:EURUSD"
-    },
-    {
-      "description": "GBPUSD",
-      "proName": "FOREXCOM:GBPUSD"
-    }
-  ],
-  "showSymbolLogo": true,
-  "isTransparent": false,
-  "displayMode": "adaptive",
-  "colorTheme": "dark",
-  "locale": "en"
-}
-  </script>
-</div>
-<!-- TradingView Widget END -->
+    "symbols": [
+      {
+        "description": "EURUSD",
+        "proName": "FOREXCOM:EURUSD"
+      },
+      {
+        "description": "GBPUSD",
+        "proName": "FOREXCOM:GBPUSD"
+      },
+      {
+        "description": "NZDUSD",
+        "proName": "FOREXCOM:NZDUSD"
+      },
+       {
+         "description": "USDJPY",
+         "proName": "FOREXCOM:USDJPY"
+       },
+      {
+          "description": "GOLD  ",
+          "proName": "FOREXCOM:XAUUSD"
+      },
+      {
+          "description": "BTC",
+          "proName": "COINBASE:BTCUSD"
+      },
+      {
+        "description": "DXY",
+        "proName": "CAPITALCOM:DXY"
+      }
+    ],
+    "showSymbolLogo": true,
+    "isTransparent": false,
+    "displayMode": "adaptive",
+    "colorTheme": "dark",
+    "locale": "en"
+  }
+    </script>
+  </div>
+</body>
+</html>
